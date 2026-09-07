@@ -1,26 +1,34 @@
 # RootMC Net
 
-Vercel project for `rootmc.net`.
+Vercel project for **rootmc.net**.
 
-![RootMC banner](media/banner.jpg)
+Blank Next.js (App Router) template — ready to build on.
 
-This repository owns the RootMC public web experience, landing pages, community discovery, and frontend integrations with documented RootMC APIs.
+## Stack
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Vercel
 
-Import this repository as its own Vercel project. Keep secrets in Vercel environment variables. Vercel serves the web app; RootMC services and long-running processing remain in `RootRecord-RootMC` or the documented Processor integration.
+Import this repository as its own Vercel project.
 
-Local developers can register `scripts/register-auto-push.ps1` for the
-two-minute opt-in auto-push workflow.
+- Framework preset: **Next.js**
+- Root directory: repository root
+- Keep secrets in Vercel environment variables (never commit them)
 
-## First Run
+Long-running processing does **not** belong in this repo.
 
-- Windows: `install.ps1`
-- Ubuntu/Debian: `./install.sh`
-- Direct boot check: `python core/boot.py`
+## Scope
 
-Boot creates missing runtime/log directories, installs dependencies from the package lockfile, and writes full output to `.runtime/logs/` while also showing it in the terminal.
-
-## Boundary
-
-No license. Public for transparency and Vercel deployment. All RootMC development remains in `RootRecord-RootMC`.
+This repo owns the RootMC public web experience, landing pages, community discovery, and frontend integrations with documented RootMC APIs.
