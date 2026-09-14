@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RootMC",
-  description: "RootMC — rootmc.net",
+  title: "RootMC Network",
+  description: "Official RootMC survival: closed-loop Gold, live market, and progression that stays with you.",
+  openGraph: { title: "RootMC Network", description: "Your journey is written in The Root.", url: "https://rootmc.net", siteName: "RootMC" },
 };
 
 export default function RootLayout({
