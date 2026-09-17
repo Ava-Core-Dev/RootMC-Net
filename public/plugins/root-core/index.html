@@ -220,7 +220,7 @@ updater:
             </tbody>
           </table>
           <p><strong>Secrets</strong> (<code>server-secret</code>, Discord bot token) stay in <code>plugins/RootMC/cloud.yml</code> — not in <code>root-core.yml</code>.</p>
-          <p><strong>Paper Discord / Slack</strong> is built into <strong>Root-Core comms</strong> (JDA chat bridge, reachout, server-log uploads). Set <code>cloud.yml</code> <code>discord.*</code> / <code>slack.*</code> and chat flags under <code>root-core.yml</code> <code>comms:</code>. Remove any legacy <code>root-discord-*.jar</code>. Without Core, suite plugins drop Discord sends. Worker/API Discord destinations stay in Cloudflare wrangler <code>DISCORD_ROOTMC_*</code> vars.</p>
+          <p><strong>Paper Discord / staff chat</strong> is built into <strong>Root-Core comms</strong> (JDA chat bridge, reachout, server-log uploads). Set <code>cloud.yml</code> <code>discord.*</code> / <code>slack.*</code> and chat flags under <code>root-core.yml</code> <code>comms:</code>. Remove any legacy <code>root-discord-*.jar</code>. Without Core, suite plugins drop Discord sends. Worker/API Discord destinations stay in Cloudflare wrangler <code>DISCORD_ROOTMC_*</code> vars.</p>
         </section>
 
         <section id="discord">
@@ -434,6 +434,6 @@ discord:
   <script src="/js/site.js" defer></script>
   <script src="/plugins/guide.js" defer></script>
   <script src="/scripts/site-nav.js" defer></script>
-<script src="/scripts/disruption-banner.js" defer></script>
+<script src="https://rootrecord.info/ava/assets/disruption-banner.js" defer></script>
 </body>
 </html>
